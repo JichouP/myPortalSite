@@ -5,10 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet" type="text/css">
   <title>JichouP Portal Site</title>
 </head>
 
 <body>
+  <div id="logodiv"></div>
+  <!-- <script src="http://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script src="snap.min.js"></script>
+  <object id="logosvg" type="image/svg+xml" data="res/logofillpath.svg"></object>
+  <script>
+    new Vivus('logosvg', { duration: 100 }, function () {
+      // #map内のpathの塗りの透明度を1にする
+      Snap("#logosvg").selectAll("path").animate({
+        "fill-opacity": 1
+      }, 600, function () {
+      });
+    });
+  </script> -->
   <div id="root"></div>
   <script src="./index.tsx"></script>
 </body>

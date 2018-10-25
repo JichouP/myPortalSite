@@ -1,8 +1,8 @@
 import { observable, action, computed } from 'mobx';
 
 export type CountStoreType = {
-  count: number;
-  getCount: () => void;
+  num: number;
+  getDoubleCount: () => void;
   onIncrement: () => void;
   onDecrement: () => void;
 };
@@ -12,8 +12,8 @@ export default class CountStore {
   num = 0;
 
   @computed
-  get getCount() {
-    return this.num;
+  get getDoubleCount() {
+    return this.num * 2;
   }
 
   @action.bound
