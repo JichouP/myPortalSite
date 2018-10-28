@@ -12,8 +12,7 @@ export default class Home extends Component<Props> {
   render() {
     return (
       <div>
-        <h1>This is home</h1>
-        <h1>Counter: {this.props.count.num}</h1>
+        <h1 className="title">ようこそ</h1>
       </div>
     );
   }

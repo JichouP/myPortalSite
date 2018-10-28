@@ -1,8 +1,31 @@
 svg {
-  width: 60%;
-  height: 60%;
-}
-div#logodiv {
+  width: auto;
+  height: auto;
   text-align: center;
   margin: 4%;
+  margin-bottom: 0%;
+}
+html {
+  background: lightblue;
+}
+body {
+  margin: 0;
+}
+div#link-row {
+  margin: 0;
+}
+button.selector {
+  margin: 2%;
+  color: rgb(60, 60, 60);
+  font-size: 200%;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
+h1.title {
+  text-align: center;
+  color: rgb(60, 60, 60);
+}
+#div-about {
+  margin: 10%;
+  margin-top: 2%;
 }

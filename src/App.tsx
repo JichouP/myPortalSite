@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Home from './Home';
-import Count from './Count';
-import Show from './Show';
+import About from './About';
+import LinkPage from './Link';
 
 export default class App extends Component {
   render() {
@@ -10,32 +10,26 @@ export default class App extends Component {
       <BrowserRouter>
         <div>
           <div
-            id="left"
+            id="link-row"
             style={{
-              float: 'left',
               margin: 20,
+              textAlign: 'center',
             }}
           >
-            <div>
-              <Link to="/">
-                <button>HOME</button>
-              </Link>
-            </div>
-            <div>
-              <Link to="/count">
-                <button>COUNT</button>
-              </Link>
-            </div>
-            <div>
-              <Link to="/show">
-                <button>SHOW</button>
-              </Link>
-            </div>
+            <Link to="/">
+              <button className="selector">HOME</button>
+            </Link>
+            <Link to="/about">
+              <button className="selector">ABOUT</button>
+            </Link>
+            <Link to="/link">
+              <button className="selector">LINK</button>
+            </Link>
           </div>
-          <div style={{ float: 'left', paddingLeft: 20 }}>
+          <div>
             <Route exact path="/" component={Home} />
-            <Route path="/count" component={Count} />
-            <Route path="/show" component={Show} />
+            <Route path="/about" component={About} />
+            <Route path="/link" component={LinkPage} />
           </div>
         </div>
       </BrowserRouter>
