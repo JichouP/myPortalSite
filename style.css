@@ -1,8 +1,7 @@
 svg {
-  width: auto;
-  height: auto;
-  text-align: center;
-  margin: 4%;
+  width: 80%;
+  display: block;
+  margin: 4% auto;
   margin-bottom: 0%;
 }
 html {
