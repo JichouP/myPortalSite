@@ -24,7 +24,7 @@ h1.title {
   text-align: center;
   color: rgb(60, 60, 60);
 }
-#div-about {
+.div-content {
   margin: 10%;
   margin-top: 2%;
 }

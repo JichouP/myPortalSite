@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
 
 export default class About extends Component {
+  renderElement = (title: string, content: string) => (
+    <div>
+      <li>{title}</li>
+      <ul>
+        <li>{content}</li>
+      </ul>
+    </div>
+  );
   render() {
     return (
-      <div id="div-about">
+      <div className="div-content">
         <h1 className="title">プロフィール</h1>
-        <p>DisplayName:</p>
-        <p>JichouP</p>
-        <p>所属：</p>
-        <p>東京工業大学 電気電子系 学士2年</p>
-        <p>宗教：</p>
-        <p>VSCode, Vim, Emacs, Ubuntu(WSL)</p>
-        <p>言語</p>
-        <p>JavaScript</p>
+        <ul>
+          {this.renderElement('Screen Name', 'JichouP')}
+          {this.renderElement('所属', '東京工業大学 電気電子系 学士2年')}
+          {this.renderElement(
+            '環境（宗教）',
+            'VSCode, Vim, Emacs, Ubuntu(WSL)'
+          )}
+          {this.renderElement('言語', 'JavaScript')}
+        </ul>
       </div>
     );
   }
