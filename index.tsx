@@ -1,8 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Provider } from 'mobx-react';
 import App from './src/App';
-import CountStore from './stores/CountStore';
 import Vivus from 'vivus';
 import Snap from 'snapsvg';
 import logofile from './res/logo.svg';
@@ -29,14 +27,5 @@ new Vivus(
       .animate({ fillOpacity: 1 }, 400);
   }
 );
-const stores = {
-  count: new CountStore(),
-};
 
-ReactDOM.render(
-  <Provider {...stores}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
-
+ReactDOM.render(<App />, document.getElementById('root'));

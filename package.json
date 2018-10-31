@@ -22,8 +22,6 @@
     "@types/snapsvg": "^0.4.34",
     "@types/vivus": "^0.4.0",
     "eve": "^0.5.4",
-    "mobx": "^5.5.2",
-    "mobx-react": "^5.3.5",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1",

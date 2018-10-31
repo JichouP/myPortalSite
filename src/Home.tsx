@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
-import { inject, observer } from 'mobx-react';
-import { CountStoreType } from '../stores/CountStore';
 
-type Props = {
-  count?: CountStoreType;
-};
-
-@inject('count')
-@observer
-export default class Home extends Component<Props> {
+export default class Home extends Component {
   render() {
     return (
       <div>
